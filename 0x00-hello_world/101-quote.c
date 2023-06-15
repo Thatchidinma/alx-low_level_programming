@@ -5,7 +5,7 @@
  * fwrite: prints out to the standard error
  * Return: end program
  */
-int main(void)
+int main( )
 {
 	fprintf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
 }
