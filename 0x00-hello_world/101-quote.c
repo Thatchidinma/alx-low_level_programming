@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	fwrite("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
+	fprintf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
 	return (0);
 }
