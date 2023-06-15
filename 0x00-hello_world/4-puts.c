@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - main block of code 
+ * main - main block of code
  * put function: prints out statement
- * return value: end program
+ * Return: end program
  */
 int main(void)
 {
