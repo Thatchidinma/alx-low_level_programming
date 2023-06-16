@@ -8,7 +8,9 @@
  */
 int main(void)
 {
-	write(STDERR_FILENO, ("and that piece of art is useful\" - Dora Korpar,", 48);
-	write(STDERR_FILENO, (" 2015-10-19\n", 13);
+	write(STDERR_FILENO, ("and that piece of ", 19);
+	write(STDERR_FILENO, ("of art is useful\"", 19);
+	write(STDERR_FILENO, (" - Dora Korpar,", 19);
+	write(STDERR_FILENO, (" 2015-10-19\n", 19);
 	return (1);
 }
