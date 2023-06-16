@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	write("and that piece of art is useful\" - Dora Korpar,", stderr);
-	write(" 2015-10-19\n", stderr);
+	write(STDERR_FILENO, "and that piece of art is useful\" - Dora Korpar,", 19);
+	write(STDERR_FILENO, " 2015-10-19\n", 19);
 	return (1);
 }
