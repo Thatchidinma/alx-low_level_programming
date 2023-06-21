@@ -4,6 +4,8 @@
 /**
  * _abs - print absolute value
  *
+ * @c: int
+ *
  * Return: always 0
  */
 int _abs(int c)
