@@ -5,7 +5,7 @@
  *
  * @c: int
  *
- * Return: always 0
+ * Return: always 1 if between A to Z else 0
  */
 
 int _isupper(int c)
