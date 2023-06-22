@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *  _isdigit - checks for digits between 0 to 9
+ * _isdigit - check for digits 0-9
  *
- *  @c: int
+ * @c: int
  *
- *  Return: 1 if bewtween 0-9 else 0.
+ * Return: 1 if between 0-9 else 0
  */
 int _isdigit(int c)
 {
