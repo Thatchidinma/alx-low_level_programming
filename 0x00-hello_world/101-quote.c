@@ -10,7 +10,7 @@ int main(void)
 {
 	write(STDERR_FILENO, "and that piece ", 15);
 	write(STDERR_FILENO, "of art is useful\"", 18);
-	write(STDERR_FILENO, " - Dora Korpar,", 17);
+	write(STDERR_FILENO, " - Dora Korpar,", 16);
 	write(STDERR_FILENO, "2015-10-19\n", 12);
 	return (1);
 }
