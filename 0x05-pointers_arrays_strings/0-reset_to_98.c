@@ -5,10 +5,9 @@
  *
  * @*n: pointer
  *
- * Return: always 0
+ * Return: always n
  */
 void reset_to_98(int *n)
 {
 	*n = 98;
-	return (0);
 }
