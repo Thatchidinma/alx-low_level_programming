@@ -10,5 +10,5 @@
  */
 void _puts(char *str)
 {
-	fwrite(str);
+	write("%d\n", str);
 }
