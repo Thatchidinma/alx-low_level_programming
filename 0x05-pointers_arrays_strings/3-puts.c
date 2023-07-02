@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * _puts - print to standard output
@@ -10,5 +9,9 @@
  */
 void _puts(char *str)
 {
-	write("%d\n", str);
+	for (; *str != '\0'; *str++)
+	{
+		_putchar(*str);
+	}
+	_putchar('\n');
 }
