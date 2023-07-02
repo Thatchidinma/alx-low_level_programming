@@ -5,7 +5,7 @@
  *
  * @s: string
  *
- * return: string
+ * Return: string
  */
 int _strlen(char *s)
 {
