@@ -9,6 +9,5 @@
  */
 void _puts(char *str)
 {
-	write{ STDOUT, str};
-	return (0);
+	write(STDOUT, str);
 }
