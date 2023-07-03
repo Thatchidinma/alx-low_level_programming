@@ -5,12 +5,12 @@
  *
  * @s: string
  *
- * Return: always 0
+ * Return: reversed string
  */
 void rev_string(char *s)
 {
 	int i = 0;
-	char j;
+	int j = 0;
 
 	while (s[i] != '\0')
 	{
@@ -19,6 +19,7 @@ void rev_string(char *s)
 	
 	for (i -= 1; i >= 0; i--)
 	{
-		j = s[i];
+		s[j] = s[i];
+		j++;
 	}
 }
