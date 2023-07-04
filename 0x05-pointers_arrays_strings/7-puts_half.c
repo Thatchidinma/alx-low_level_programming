@@ -32,7 +32,7 @@ void puts_half(char *str)
 		strlenhalf = (strlen - 1) / 2;
 		while (strlenhalf < strlen)
 		{
-			_putchar(str[strlenhalf + 1]);
+			_putchar(str[strlenhalf + 2]);
 			strlenhalf++;
 		}
 		_putchar('\n');
