@@ -29,10 +29,10 @@ void puts_half(char *str)
 	}
 	else
 	{
-		strlenhalf = (strlen - 1) / 2;
+		strlenhalf = ((strlen - 1) / 2) + 1;
 		while (strlenhalf < strlen)
 		{
-			_putchar(str[strlenhalf + 2]);
+			_putchar(str[strlenhalf]);
 			strlenhalf++;
 		}
 		_putchar('\n');
