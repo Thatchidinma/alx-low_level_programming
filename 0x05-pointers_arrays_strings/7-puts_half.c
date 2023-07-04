@@ -17,7 +17,7 @@ void puts_half(char *str)
 	}
 	strlenhalfeven = strlen / 2;
 	strlenhalfodd  = (strlen - 1) / 2;
-	even = strlen % 10
+	even = strlen % 10;
 	if ( even = 0)
 	{
 		while (str[strlenhalfeven] < str[strlen])
