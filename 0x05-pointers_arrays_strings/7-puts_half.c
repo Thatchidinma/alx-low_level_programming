@@ -25,15 +25,16 @@ void puts_half(char *str)
 			_putchar(str[strlenhalf]);
 			strlenhalf++;
 		}
+		_putchar('\0');
 	}
 	else
 	{
 		strlenhalf = (strlen - 1) / 2;
 		while (strlenhalf < strlen)
 		{
-			_putchar(str[strlenhalf + 1]);
+			_putchar(str[strlenhalf++]);
 			strlenhalf++;
 		}
+		_putchar('\0');
 	}
-	_putchar('\0');
 }
