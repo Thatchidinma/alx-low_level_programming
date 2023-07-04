@@ -12,8 +12,9 @@
  */
 void print_array(int *a, int n)
 {
-	int length = 0, n = 0;
+	int length = 0;
 
+	n = 0;
 	while (a[n] != '\0')
 	{
 		length++;
