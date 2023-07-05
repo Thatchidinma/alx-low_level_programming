@@ -15,11 +15,9 @@ void _print_rev_recursion(char *s)
 	{
 		i++;
 	}
-	_putchar((i % 10) + '0');
 	if (i > 0)
 	{
 		_putchar(s[i]);
 		i--;
-		_print_rev_recursion(s);
 	}
 }
