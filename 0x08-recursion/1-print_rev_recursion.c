@@ -14,7 +14,7 @@ void _print_rev_recursion(char *s)
 	if (s[i] != '\0')
 	{
 		i++;
-		_print_rev_recursion(s - i);
+		_print_rev_recursion(s - (i + 1));
 	}
 	_putchar((i % 10) + '0');
 	if (i > 1)
