@@ -8,7 +8,7 @@
  *
  * @argv: argument vector (string of arguments)
  *
- * Return: 1 if the program recieves two arguments and error if it doesnt
+ * Return: 0 if the program recieves two arguments and 1 if it doesnt
  */
 int main(int argc, char *argv[])
 {
@@ -18,10 +18,11 @@ int main(int argc, char *argv[])
 	{
 		multiply = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", multiply);
-		return (1);
+		return (0);
 	}
 	else
 	{
-		return (Error);
+		printf("Error");
+		return (1);
 	}
 }
