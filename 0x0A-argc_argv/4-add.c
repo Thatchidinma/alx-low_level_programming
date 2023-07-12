@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else if ( argc > 2)
+	else if (argc > 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
