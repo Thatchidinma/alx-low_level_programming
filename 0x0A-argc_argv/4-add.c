@@ -9,7 +9,7 @@
  *
  * @argv: argument vector (string of argument)
  *
- * Return: 0 if no argument is passed, return 1 if string contains non-digits
+ * Return: 0 if no argument, 1 if string contains non-digits
  */
 int main(int argc, char *argv[])
 {
