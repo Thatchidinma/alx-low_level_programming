@@ -26,8 +26,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*s1++;
 		*s2++;
 	}
-	if (s1 == NULL)
+	if (c == NULL)
 	{
 		return (NULL);
 	}
+	return (c);
 }
