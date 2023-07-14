@@ -23,8 +23,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (*s2 != s[n])
 	{
 		*s1 = *s2;
-		*s1++;
-		*s2++;
+		s1++;
+		s2++;
 	}
 	if (c == NULL)
 	{
