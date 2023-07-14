@@ -6,7 +6,7 @@
  *
  * @b: int
  *
- * Return: 98 if malloc fails else 0
+ * Return: a pointer
  */
 void *malloc_checked(unsigned int b);
 {
