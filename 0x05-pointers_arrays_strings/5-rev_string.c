@@ -18,9 +18,8 @@ void rev_string(char *s)
 	}
 	for (i -= 1; i >= 0; i--)
 	{
-		rev = s[j];
-		s[j] = s[i];
-		s[i] = rev;
+		rev = s[i];
+		s[j] = rev;
 		j++;
 	}
 }
