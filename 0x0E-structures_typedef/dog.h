@@ -7,3 +7,4 @@ struct dog
 	char *owner;
 };
 #endif
+typedef struct dog dog_t;
