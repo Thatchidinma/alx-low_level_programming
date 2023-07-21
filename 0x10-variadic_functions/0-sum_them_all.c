@@ -6,6 +6,8 @@
  *
  * @n: number of parameter
  *
+ * @...: varaiables to sum
+ *
  * Return: sum and if n == 0 return 0
  */
 int sum_them_all(const unsigned int n, ...)
