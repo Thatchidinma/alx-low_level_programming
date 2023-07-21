@@ -9,7 +9,7 @@
  *
  * @cmp: pointer to array
  *
- * Returns: an int
+ * Return: an int
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
