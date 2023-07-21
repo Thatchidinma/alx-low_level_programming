@@ -13,12 +13,13 @@
  *
  * Return: nothing
  */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)i
 {
 	va_list args;
 	unsigned int i = 0;
 	
 	va_start(args, n);
+
 	while (i < n)
 	{
 		printf("%d", va_arg(args, int));
@@ -28,6 +29,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		i++;
 	}
-	va_end(args);
 	printf("\n");
+
+	va_end(args);
 }
