@@ -1,6 +1,8 @@
 #ifndef _MORE_LINK_LISTS_
 #define _MORE_LINK_LISTS_
 
+#include <stdlib.h>
+
 typedef struct listint_s
 {
 	int n;
