@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_list - prints all elements of a list
+ * print_listint - prints all elements of a list
  *
  * @h: a linked list
  *
@@ -15,7 +15,6 @@ size_t print_listint(const listint_t *h)
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
-		
 		h = h->next;
 		count++;
 	}
