@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 
 	length = _strlen(b);
 
-	while (len--)
+	while (length--)
 	{
 		if (b[length] != 48 && b[length] != 49)
 		{
