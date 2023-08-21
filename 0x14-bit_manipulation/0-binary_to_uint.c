@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 	{
-		return(0);
+		return (0);
 	}
 
 	length = _strlen(b);
@@ -35,6 +35,13 @@ unsigned int binary_to_uint(const char *b)
 	return (sum);
 }
 
+/**
+ * _strlen - calculate string length
+ *
+ * s: string
+ *
+ * Return: string length
+ */
 int _strlen(const char *s)
 {
 	int count = 0;
