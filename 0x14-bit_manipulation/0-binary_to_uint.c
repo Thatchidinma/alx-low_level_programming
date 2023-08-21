@@ -38,7 +38,7 @@ unsigned int binary_to_uint(const char *b)
 /**
  * _strlen - calculate string length
  *
- * s: string
+ * @s: string
  *
  * Return: string length
  */
