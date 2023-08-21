@@ -22,3 +22,26 @@ unsigned int binary_to_uint(const char *b)
 	while (len--)
 	{
 		if (b[length] != 48 && b[length] != 49)
+		{
+			return (0);
+		}
+		if (b[length] == 49)
+		{
+			sum += 1 << counter;
+		}
+		counter++;
+	}
+
+	return (sum);
+}
+
+int _strlen(const char *s)
+{
+	int count = 0;
+
+	while (s[count])
+	{
+		count++;
+	}
+	return (count);
+}
