@@ -1,53 +1,39 @@
 #include "main.h"
 
 /**
-  * create_file - create file
+  * read_textfile - read text file
   *
-  * @filename: its name
+  * @filename: The file
   *
-  * @text_content:its content
+  * @letters: Number of letters to reads and prints
   *
-  * Return: int
+  * Return: read
   */
-int create_file(const char *filename, char *text_content)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int i;
+	int f, r;
+	char *buff = malloc(sizeof(char *) * letters);
+
+	if (!buff)
+	{
+		return (0);
+	}
 
 	if (!filename)
 	{
-		return (-1);
+		return (0);
 	}
 
-	i = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	if (i == -1)
+	f = open(filename, O_RDONLY, 0600);
+	if (f == -1)
 	{
-		return (-1);
+		return (0);
 	}
 
-	if (text_content)
-	{
-		write(i, text_content, _strlen(text_content));
-	}
+	r = read(f, buff, letters);
+	write(STDOUT_FILENO, buff, r);
 
-	close(i);
-	return (1);
-}
-
-/**
-  * _strlen - Returns the length of a string
-  *
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int _strlen(char *s)
-{
-	int n = 0;
-
-	while (s[n])
-	{
-		n++;
-	}
-
-	return (n);
+	free(buff);
+	close(f);
+	return (r);
 }
