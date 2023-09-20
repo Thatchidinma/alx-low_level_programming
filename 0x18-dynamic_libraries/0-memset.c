@@ -8,6 +8,8 @@
  * @c: char
  *
  * @n: number of byte
+ *
+ * Return: m
  */
 char *_memset(char *s, char b, unsigned int n)
 {
